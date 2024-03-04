@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- FortuneOS -->
+  <remote  name="Fortune-OS"
+           fetch="https://github.com/FortuneOS-CAF"
+           revision="udc" />
+
+  <remote  name="Fortune-OS-Devices"
+           fetch="https://github.com/Fortune-OS-Devices"
+           revision="udc" />
+
+  <remote  name="Fortune-OS-Gitlab"
+           fetch="https://gitlab.com/Fortune-OS"
+           revision="udc" />
+
+  <!-- platform root -->
+  <remove-project name="platform/art" />
+  <project path="art" name="platform_art" remote="Fortune-OS" />
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="platform_bionic" remote="Fortune-OS" />
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="Fortune-OS" />
+  <project path="manifest" name="platform_manifest" remote="Fortune-OS" />
+
+  <!-- platform build -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="platform_build" remote="Fortune-OS" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="platform_build_soong" remote="Fortune-OS" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- platform frameworks -->
+  <remove-project name="platform/frameworks/av"/>
+  <project path="frameworks/av" name="platform_frameworks_av" remote="Fortune-OS" />
+  <remove-project name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="Fortune-OS" />
+  <remove-project name="platform/frameworks/native"/>
+  <project path="frameworks/native" name="platform_frameworks_native" remote="Fortune-OS" />
+
+  <!-- platform packages -->
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="Fortune-OS" />
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="Fortune-OS" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="Fortune-OS" />
+
+  <!-- platform system -->
+  <remove-project name="platform/system/core"/>
+  <project path="system/core" name="platform_system_core" remote="Fortune-OS" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="Fortune-OS" />
+
+  <!-- platform vendor fortune -->
+  <project path="vendor/fortune" name="platform_vendor_fortune" remote="Fortune-OS" />
+  <project path="vendor/gms" name="platform_vendor_gms" remote="Fortune-OS-Gitlab" />
+
+</manifest>
