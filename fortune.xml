@@ -51,6 +51,9 @@
   <remove-project name="platform/frameworks/native"/>
   <project path="frameworks/native" name="platform_frameworks_native" remote="Fortune-OS" />
 
+  <!-- platform hardware -->
+  <project path="hardware/fortune/compat" name="platform_hardware_fortune_compat" remote="Fortune-OS" />
+
   <!-- platform packages -->
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="Fortune-OS" />
