@@ -39,6 +39,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- platform external -->
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="Fortune-OS" />
+
   <!-- platform frameworks -->
   <remove-project name="platform/frameworks/av"/>
   <project path="frameworks/av" name="platform_frameworks_av" remote="Fortune-OS" />
