@@ -11,8 +11,46 @@
           fetch="https://github.com/"
           revision="lineage-21.0" />
 
+  <remote name="reloaded"
+          fetch="https://github.com/ReloadedOS"
+          revision="u" />
+
+  <remove-project name="device/qcom/qssi" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <remove-project name="device/qcom/vendor-common" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+
+  <!-- Devices -->
+  <project path="device/qcom/qssi" name="device_qcom_qssi" remote="reloaded" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="reloaded" />
+  <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="reloaded" />
+
   <!-- Extract tools -->
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="LineageOS" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="LineageOS" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_commonsys-intf_bluetooth" remote="reloaded" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="reloaded" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="reloaded" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="reloaded" />
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="vendor_qcom_opensource_commonsys-intf_wfd" remote="reloaded" />
+  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom-opensource_core-utils" remote="reloaded" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="reloaded" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="reloaded" revision="u-legacy" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom-opensource_dataservices" remote="reloaded" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="reloaded" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="reloaded" />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="reloaded" />
+  <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="disabled" clone-depth="1" />
 
 </manifest>
