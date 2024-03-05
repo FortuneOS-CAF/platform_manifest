@@ -39,6 +39,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- platform device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="platform_device_qcom_common" remote="Fortune-OS" />
+
   <!-- platform external -->
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="Fortune-OS" />
@@ -73,5 +77,6 @@
   <!-- platform vendor fortune -->
   <project path="vendor/fortune" name="platform_vendor_fortune" remote="Fortune-OS" />
   <project path="vendor/gms" name="platform_vendor_gms" remote="Fortune-OS-Gitlab" />
+  <project path="vendor/qcom/common" name="platform_vendor_qcom_common" remote="Fortune-OS" />
 
 </manifest>
