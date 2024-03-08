@@ -44,6 +44,8 @@
   <project path="device/qcom/common" name="platform_device_qcom_common" remote="Fortune-OS" />
 
   <!-- platform external -->
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="platform_external_mksh" remote="Fortune-OS" />
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="Fortune-OS" />
 
