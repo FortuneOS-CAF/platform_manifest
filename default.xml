@@ -4,5 +4,7 @@
   <include name="include/system.xml"/>
   <include name="include/vendor.xml"/>
   <include name="include/remove.xml"/>
+  <include name="include/fortune.xml"/>
+  <include name="include/external.xml"/>
 
 </manifest>

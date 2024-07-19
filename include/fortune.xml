@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- FortuneOS -->
+  <remote  name="fortune"
+           fetch="https://github.com/FortuneOS-CAF"
+           revision="usagi" />
+
+  <remote  name="fortune-gitea"
+           fetch="https://gitea.com/FortuneOS"
+           revision="usagi" />
+
+  <!-- platform root -->
+  <remove-project name="platform/art" />
+  <project path="art" name="platform_art" remote="fortune" />
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="platform_bionic" remote="fortune" />
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="fortune" />
+  <project path="manifest" name="platform_manifest" remote="fortune" />
+
+  <!-- platform build -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="platform_build" remote="fortune" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="platform_build_soong" remote="fortune" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- platform device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="platform_device_qcom_common" remote="fortune" />
+  <remove-project name="device/qcom/qssi" />
+  <project path="device/qcom/qssi" name="platform_device_qcom_qssi" remote="fortune" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="fortune" />
+  <remove-project name="device/qcom/vendor-common" />
+  <project path="device/qcom/vendor-common" name="platform_device_qcom_vendor-common" remote="fortune" />
+
+  <!-- platform external -->
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="platform_external_fastrpc" remote="fortune" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="platform_external_mksh" remote="fortune" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="fortune" />
+
+  <!-- platform frameworks -->
+  <remove-project name="platform/frameworks/av"/>
+  <project path="frameworks/av" name="platform_frameworks_av" remote="fortune" />
+  <remove-project name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="fortune" />
+  <remove-project name="platform/frameworks/native"/>
+  <project path="frameworks/native" name="platform_frameworks_native" remote="fortune" />
+
+  <!-- platform hardware -->
+  <project path="hardware/fortune/compat" name="platform_hardware_fortune_compat" remote="fortune" />
+
+  <!-- platform packages -->
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="fortune" />
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="fortune" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="fortune" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="fortune" />
+
+  <!-- platform packages fortune -->
+  <project path="packages/apps/FortuneCraft" name="platform_packages_apps_FortuneCraft" remote="fortune" />
+  <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="fortune" />
+
+  <!-- platform system -->
+  <remove-project name="platform/system/core"/>
+  <project path="system/core" name="platform_system_core" remote="fortune" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="fortune" />
+
+  <!-- platform vendor fortune -->
+  <project path="vendor/fortune" name="platform_vendor_fortune" remote="fortune" />
+  <project path="vendor/fortune/products" name="platform_vendor_fortune_products" remote="fortune" />
+  <project path="vendor/gms" name="vendor_gms" remote="fortune-gitea" clone-depth="1"/>
+
+  <!-- platform vendor qcom -->
+  <project path="vendor/qcom/common" name="platform_vendor_qcom_common" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_commonsys-intf_display" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="platform_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_commonsys_system_bt" remote="fortune" />
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="platform_vendor_qcom_opensource_commonsys-intf_wfd" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <project path="vendor/qcom/opensource/core-utils" name="platform_vendor_qcom-opensource_core-utils" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="fortune" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="fortune" revision="usagi-legacy" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom-opensource_dataservices" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="platform_vendor_qcom_opensource_usb" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform_vendor_qcom_opensource_vibrator" remote="fortune" />
+
+</manifest>
