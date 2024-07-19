@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="include/system.xml"/>
+  <include name="include/vendor.xml"/>
+  <include name="include/remove.xml"/>
+
+</manifest>
