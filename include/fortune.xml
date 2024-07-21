@@ -88,6 +88,7 @@
   <project path="vendor/fortune" name="platform_vendor_fortune" remote="fortune" />
   <project path="vendor/fortune/products" name="platform_vendor_fortune_products" remote="fortune" />
   <project path="vendor/gms" name="vendor_gms" remote="fortune-gitea" clone-depth="1"/>
+  <project path="vendor/support" name="platform_vendor_support" remote="fortune" />
 
   <!-- platform vendor qcom -->
   <project path="vendor/qcom/common" name="platform_vendor_qcom_common" remote="fortune" />
