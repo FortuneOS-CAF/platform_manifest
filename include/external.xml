@@ -17,6 +17,10 @@
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="LineageOS" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="LineageOS" />
 
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/st/nfc" />
+  <project path="hardware/st/nfc" name="AOSPA/android_hardware_st_nfc" remote="github" revision="uvite"/>
+
   <!-- Vendor -->
   <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="disabled" clone-depth="1"/>
 
