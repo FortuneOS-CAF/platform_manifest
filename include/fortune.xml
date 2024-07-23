@@ -63,6 +63,12 @@
 
   <!-- platform hardware -->
   <project path="hardware/fortune/compat" name="platform_hardware_fortune_compat" remote="fortune" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="fortune" />
+
+  <!-- platform kernel -->
+  <remove-project name="kernel/configs" />
+  <project path="kernel/configs" name="platform_kernel_configs" remote="fortune" />
 
   <!-- platform packages -->
   <remove-project name="platform/packages/apps/Launcher3" />
@@ -79,6 +85,8 @@
   <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="fortune" />
 
   <!-- platform system -->
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="platform_system_bpf" remote="fortune" />
   <remove-project name="platform/system/core"/>
   <project path="system/core" name="platform_system_core" remote="fortune" />
   <remove-project name="platform/system/update_engine" />
