@@ -71,12 +71,8 @@
   <project path="kernel/configs" name="platform_kernel_configs" remote="fortune" />
 
   <!-- platform packages -->
-  <remove-project name="platform/packages/apps/Launcher3" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="fortune" />
   <remove-project name="platform/packages/apps/Settings"/>
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="fortune" />
-  <remove-project name="platform/packages/apps/ThemePicker" />
-  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="fortune" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="fortune" />
   <remove-project name="platform/packages/modules/DeviceLock" />
