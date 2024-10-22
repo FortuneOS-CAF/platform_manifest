@@ -122,6 +122,13 @@
   <project path="vendor/qcom/common" name="platform_vendor_qcom_common" remote="fortune" />
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="platform_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="fortune" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_commonsys-intf_display" remote="fortune" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="platform_vendor_qcom-opensource_display-commonsys" remote="fortune" />
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="platform_vendor_qcom_opensource_commonsys-intf_wfd" remote="fortune" />
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="fortune" />
