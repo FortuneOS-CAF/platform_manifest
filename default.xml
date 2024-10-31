@@ -4,4 +4,6 @@
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
+  <include name="include/obsolete.xml"/>
+
 </manifest>
