@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <!-- AOSPA -->
+  <remote  name="aospa"
+           fetch=".."
+           review="gerrit.aospa.co"
+           revision="vauxite"/>
+
+  <!-- Extract toools -->
+  <project path="prebuilts/extract-tools" name="AOSPA/android_prebuilts_extract-tools" remote="aospa" />
+  <project path="tools/extract-utils" name="AOSPA/android_tools_extract-utils" remote="aospa" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="disabled" clone-depth="1"/>
+
+</manifest>
