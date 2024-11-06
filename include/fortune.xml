@@ -113,6 +113,7 @@
 
   <!-- platform vendor fortune -->
   <project path="vendor/fortune" name="platform_vendor_fortune" remote="fortune" />
+  <project path="vendor/fortune-extras" name="platform_vendor_fortune-extras" remote="fortune" />
   <project path="vendor/fortune-products" name="platform_vendor_fortune-products" remote="fortune" />
   <project path="vendor/google/gms" name="vendor_google_gms" remote="fortune-codeberg" clone-depth="1"/>
   <project path="vendor/google/pixel" name="vendor_google_pixel" remote="fortune-codeberg" clone-depth="1"/>
