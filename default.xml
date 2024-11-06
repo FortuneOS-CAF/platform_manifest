@@ -4,6 +4,7 @@
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
+  <include name="include/aosp.xml"/>
   <include name="include/fortune.xml"/>
   <include name="include/external.xml"/>
   <include name="include/obsolete.xml"/>
