@@ -10,6 +10,10 @@
            fetch="https://codeberg.org/FortuneOS"
            revision="vic" />
 
+  <remote  name="fortune-devices"
+           fetch="https://github.com/Fortune-OS-Devices"
+           revision="vic" />
+
   <!-- platform root -->
   <remove-project name="platform/art" />
   <project path="art" name="platform_art" remote="fortune" />
