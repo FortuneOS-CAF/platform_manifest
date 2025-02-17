@@ -116,6 +116,8 @@
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="fortune" />
   <remove-project name="platform/system/update_engine" />
   <project path="system/update_engine" name="platform_system_update_engine" remote="fortune" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="platform_system_vold" remote="fortune" />
 
   <!-- platform vendor fortune -->
   <project path="vendor/fortune" name="platform_vendor_fortune" remote="fortune" />
