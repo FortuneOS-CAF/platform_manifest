@@ -66,6 +66,8 @@
   <project path="external/gptfdisk" name="platform_external_gptfdisk" remote="fortune" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="platform_external_json-c" remote="fortune" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="platform_external_mksh" remote="fortune" />
   <remove-project name="platform/external/tinycompress" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="fortune" />
   <remove-project name="platform/external/wpa_supplicant_8" />
