@@ -57,6 +57,10 @@
     <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
   </project>
 
+  <!-- platform extract tools -->
+  <project path="prebuilts/extract-tools" name="platform_prebuilts_extract-tools" remote="fortune" />
+  <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="fortune" />
+
   <!-- platform external -->
   <remove-project name="platform/external/e2fsprogs" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="fortune" />
