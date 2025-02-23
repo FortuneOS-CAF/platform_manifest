@@ -102,6 +102,7 @@
 
   <!-- platform packages -->
   <project path="packages/apps/FortuneCraft" name="platform_packages_apps_FortuneCraft" remote="fortune" />
+  <project path="packages/apps/FortuneSystemUI" name="platform_packages_apps_Fortune_SystemUI" remote="fortune" />
   <remove-project name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="fortune" />
   <remove-project name="platform/packages/apps/Settings"/>
