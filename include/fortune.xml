@@ -105,6 +105,7 @@
   <project path="packages/apps/FortuneSystemUI" name="platform_packages_apps_Fortune_SystemUI" remote="fortune" />
   <remove-project name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="fortune" />
+  <project path="packages/apps/ParanoidSense" name="platform_packages_apps_ParanoidSense" remote="fortune" />
   <remove-project name="platform/packages/apps/Settings"/>
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="fortune" />
   <remove-project name="platform/packages/apps/ThemePicker"/>
