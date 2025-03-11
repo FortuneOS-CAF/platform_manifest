@@ -68,6 +68,8 @@
   <project path="external/fastrpc" name="platform_external_fastrpc" remote="fortune" />
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="platform_external_gptfdisk" remote="fortune" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="platform_external_jemalloc-new" remote="fortune" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="platform_external_json-c" remote="fortune" />
   <remove-project name="platform/external/mksh" />
