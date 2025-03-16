@@ -62,6 +62,8 @@
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="fortune" />
 
   <!-- platform external -->
+  <remove-project name="platform/external/dng_sdk" />
+  <project path="external/dng_sdk" name="platform_external_dng_sdk" remote="fortune" />
   <remove-project name="platform/external/e2fsprogs" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="fortune" />
   <remove-project name="platform/external/fastrpc" />
@@ -118,6 +120,12 @@
   <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="fortune" />
   <remove-project name="platform/packages/modules/DeviceLock" />
   <project path="packages/modules/DeviceLock" name="platform_packages_modules_DeviceLock" remote="fortune" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="fortune" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="fortune" />
+   <remove-project name="platform/packages/services/Telephony" />
+   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="fortune" />
 
   <!-- platform packages fortune -->
   <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="fortune" />
